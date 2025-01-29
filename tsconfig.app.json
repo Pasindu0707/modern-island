@@ -6,21 +6,20 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
+    "allowJs": true,         // Allows JS files to be imported
+    "checkJs": false,        // Disables type checking for JS files
+    "esModuleInterop": true, // Ensures compatibility with JS modules
+    "strict": true,          // Enables strict type-checking
+    "noUnusedLocals": true,  // Warns about unused variables
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "src/**/*.jsx"] // Include the JSX files as well
 }
