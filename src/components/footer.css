@@ -1,0 +1,23 @@
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-links a:hover {
+  color: #fbbf24; /* Tailwind Yellow-400 */
+  text-decoration: underline;
+}
+
+.footer-icons svg:hover {
+  transform: scale(1.2);
+  color: #fbbf24;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
